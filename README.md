@@ -1,4 +1,4 @@
-# how to deploye project in github pages 
+# how to deploy project in github pages 
 
 ###### run cmd :  npm install gh-pages --save-dev
 
