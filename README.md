@@ -1,3 +1,25 @@
+# how to deploye project in github pages 
+
+###### run cmd :  npm install gh-pages --save-dev
+
+
+Add some properties to the app's package.json file.
+
+##### At the top level, add a homepage property. Define its value to be the string http://{username}.github.io/{repo-name}, where {username} is your GitHub username, and {repo-name} is the name of the GitHub repository you created in step 1. Since my GitHub username is gitname and the name of my GitHub repository is react-gh-pages, I added the following property:
+//...
+"homepage": "http://gitname.github.io/react-gh-pages"
+
+###### In the existing scripts property, add a predeploy property and a deploy property, each having the values shown below:
+"scripts": {
+  //...
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
+Generate a production build of your app, and deploy it to GitHub Pages. (2 minutes)
+
+###### $ npm run deploy
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
